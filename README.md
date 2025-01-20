@@ -1,4 +1,4 @@
-# buzzline-01-case
+# buzzline-01-gjrich
 
 This project introduces streaming data. 
 The Python language includes generators - we'll use this feature to generate some streaming buzzline messages. 
@@ -22,7 +22,7 @@ For detailed instructions, see:
 - [SETUP-MAC-LINUX.md](docs/SETUP-MAC-LINUX.md)
 - [SETUP-WINDOWS.md](docs/SETUP-WINDOWS.md)
 
-## Python Versions (3.11 for this course)
+## Python Versions (3.11 for this code)
 
 The most current version of Python is 3.13. 
 This course will use advanced tools (such as Kafka) that still require Python 3.11. 
@@ -30,7 +30,7 @@ You are encouraged to install both and practice multiple versions.
 If space is an issue, we only need 3.11 in this course. 
 For more information, See [PYTHON-VERSIONS.md](docs/PYTHON-VERSIONS.md).
 
-## Task 2. Copy This Example Project & Change `case` to `yourname` (customized)
+## Task 2. Copy This Example Project & Change `gjrich` to `yourname` (customized)
 
 Once the tools are installed, copy/fork this project into your GitHub account
 and create your own version of this project to run and experiment with. 
@@ -67,14 +67,16 @@ Windows PowerShell:
 
 ```shell
 .venv\Scripts\activate
-py -m producers.basic_producer_case
+py -m producers.basic_producer_gjrich
 ```
 
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m producers.basic_producer_case
+python3 -m producers.basic_producer_gjrich
 ```
+
+This will generate a number of messages regarding interactions with animals.
 
 ## Task 5. Monitor an Active Log File (Terminal 2)
 
@@ -87,13 +89,13 @@ Use the commands below to activate .venv, and run the file as a module.
 Windows:
 ```shell
 .venv\Scripts\activate
-py -m consumers.basic_consumer_case
+py -m consumers.basic_consumer_gjrich
 ```
 
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m consumers.basic_consumer_case
+python3 -m consumers.basic_consumer_gjrich
 ```
 
 ## Save Space

@@ -1,5 +1,5 @@
 """
-basic_consumer_case.py
+basic_consumer_gjrich.py
 
 Read a log file as it is being written. 
 """
@@ -52,9 +52,23 @@ def process_message(log_file) -> None:
             print(f"Consumed log message: {message}")
 
             # monitor and alert on special conditions
-            if "I just loved a movie! It was funny." in message:
-                print(f"ALERT: The special message was found! \n{message}")
-                logger.warning(f"ALERT: The special message was found! \n{message}")
+            if "I just saw a dog! It was confused." in message:
+                print(f"ALERT: Special dog findings! \n{message}")
+                logger.warning(f"ALERT: Special dog findings! \n{message}")
+
+            if "I just discovered a mysterious creature! It was weird." in message:
+                print(f"ALERT: The mysterious creature was found! \n{message}")
+                logger.warning(f"ALERT: The mysterious creature was found! \n{message}")
+
+            if "I just caught an elephant! It was lanky." in message:
+                print(f"ALERT: The lanky elephant was caught! \n{message}")
+                logger.warning(f"ALERT: The lanky elephant was caught! \n{message}")
+
+# for reference, here are the special conditions from the producer
+'''ADJECTIVES: list = ["unique", "confused", "lanky", "exciting", "weird"]
+ACTIONS: list = ["found", "saw", "caught", "surprised", "discovered"]
+TOPICS: list = ["a mysterious creature", "a dog", "an elephant", "an eagle", "a tiger"]'''
+
 
 
 #####################################
